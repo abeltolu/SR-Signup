@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Stardom Reality">
+        <title>Stardom Reality - Join the network of creatives</title>
+
+        <!-- Favicons-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+        <!-- BASE CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/vendors.min.css" rel="stylesheet">
+        <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+        <link href="css/skins/square/grey.css" rel="stylesheet">
+
+        <!-- YOUR CUSTOM CSS -->
+        <link href="css/uploader.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+
+
+        <script src="js/modernizr.js"></script>
+        <!-- Modernizr -->
+
+    </head>
+
+    <body>
+
+        <div id="preloader">
+            <div data-loader="circle-side"></div>
+        </div><!-- /Preload -->
+
+        <div id="loader_form">
+            <div data-loader="circle-side-2"></div>
+        </div><!-- /loader_form -->
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="javascript:;">
+                            <img src="img/logo.png" width="142" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+        </header>
+        <!-- /Header -->
+
+        <main>
+            <div class="container">
+                <div id="wizard_container">
+                    <form name="example-1" id="wrapped" method="POST">
+                        <input id="website" name="website" type="text" value="">
+                        <!-- Leave for security protection, read docs for details -->
+                        <div id="middle-wizard">
+
+                            <!--BEGIN STEP 1-->
+                            <div class="step">
+                                <div class="question_title">
+                                    <h3>Step 1 - Choose your Star</h3>
+                                    <p>Multiple selections allowed</p>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <input id="answer_1" name="star_type[]" type="checkbox" value="Design" class="required">
+                                            <label for="answer_1">
+                                                <img src="img/songwriter.svg" alt="" width="100px">
+                                                <strong>Songwriter</strong>
+                                                Do you write or compose head spinning songs?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <input id="answer_2" type="checkbox" name="star_type[]" value="Seo-Optimization" class="required">
+                                            <label for="answer_2">
+                                                <img src="img/club.svg" alt="" width="100px">
+                                                <strong>Music Producer</strong>
+                                                Do you oversee and manage the sound recording and production of music?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <input id="answer_3" name="star_type[]" type="checkbox" value="Web-Development" class="required">
+                                            <label for="answer_3">
+                                                <img src="img/musician2.svg" alt="" width="100px">
+                                                <strong>Vocalist</strong>
+                                                Are your vocal cords filled with melodius sounds?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /row-->
+                            </div>
+                            <!--END STEP 2-->
+
+
+                            <!--BEGIN STEP 2-->
+                            <div class="step">
+                                <div class="question_title">
+                                    <h3>Step 2 - Upload your demo content</h3>
+                                    <p>Share a bit of your work</p>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6">
+                                        <div class="box_general">
+                                            <div class="form-group">
+                                                <label><strong>What's your stage name?</strong></label>
+                                                <input type="text" name="stage_name" class="required form-control" placeholder="Stage Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label><strong>What's the title of your song?</strong></label>
+                                                <input type="text" name="song_title" class="form-control required" placeholder="Song title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label><strong>Insert your lyrics</strong></label>
+                                                <textarea name="lyrics" class="form-control required" style="height:100px;" placeholder="Give us some of your 'Gbedu'" ></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label><strong>Upload your File</strong></label>
+                                                <div id="file-upload-form" class="uploader">
+                                                    <input id="file-upload" class="required" type="file" name="fileUpload" accept="image/*, video/*, audio/*">
+
+                                                    <label for="file-upload" id="file-drag">
+
+                                                        <!--IF UPLOADED FILE IS IMAGE-->
+                                                        <img id="file-image" src="#" alt="Preview" class="hidden">
+
+                                                        <!--IF UPLOADED FILE IS VIDEO-->
+                                                        <video id="file-video" class="hidden" width="100%" controls>
+                                                            <source src="" id="file-video-source">
+                                                            Your browser does not support HTML5 video.
+                                                        </video>
+
+                                                        <!--IF UPLOADED FILE IS AUDIO-->
+                                                        <audio id="file-audio" class="hidden" controls>
+                                                            <source id="file-audio-source" type="audio/mpeg" src=""/>
+                                                            Your browser does not support the <code>audio</code> element.
+                                                        </audio>
+
+                                                        <div id="start">
+                                                            <img src="img/cloud-storage-uploading-option.svg" width="50px"/>
+                                                            <div>Drag & Drop your File here..</div>
+                                                            <span id="file-upload-btn" class="btn btn-primary">OR BROWSE</span>
+                                                        </div>
+                                                        <div id="response" class="hidden">
+                                                            <div id="messages"></div>
+                                                            <!--progress class="progress" id="file-progress" value="0">
+                                                                <span>0</span>%
+                                                            </progress-->
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- /box_general -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END STEP 2-->
+
+
+                            <!--BEGIN STEP 3-->
+                            <div class="step">
+                                <div class="question_title">
+                                    <h3>Step 3 - Personal data</h3>
+                                    <p>Please fill the form below with your personal data</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-5">
+                                        <div class="box_general">
+                                            <div class="form-group">
+                                                <input type="text" name="first_name" class="required form-control" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="last_name" class="required form-control" placeholder="Last Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="telephone" class="form-control" placeholder="Your Telephone">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="required form-control" placeholder="Your Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="city" class="form-control" placeholder="City">
+                                            </div>
+                                            <div class="form-group add_bottom_30">
+                                                <div class="styled-select">
+                                                    <select class="required" name="country">
+                                                        <option value="" selected>Select your country</option>
+                                                        <option value="Nigeria">Nigeria</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox_questions">
+                                                <input name="terms" type="checkbox" class="icheck required" value="yes">
+                                                <label>Please accept <a href="javascript:;" data-toggle="modal" data-target="#terms-txt">terms and conditions</a>.</label>
+                                            </div>
+                                        </div>
+                                        <!-- /box_general -->
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!--END STEP 3-->
+
+                            <!--BEGIN STEP 4-->
+                            <div class="submit step" id="end">
+                                <div class="question_title">
+                                    <h3>Step 4 - Data Preview</h3>
+                                    <p>Please confirm the details you provided. If satisfied, click the pay now button</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="box_general">
+
+                                            <div class="reviewContainer">
+
+                                                <div class="reviewItem">
+                                                    <div class="reviewItemName">
+                                                        Full Name
+                                                    </div>
+                                                    <div class="reviewItemValue">
+                                                        Adetula Tolulope
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviewItem">
+                                                    <div class="reviewItemName">
+                                                        Email address
+                                                    </div>
+                                                    <div class="reviewItemValue">
+                                                        abeltolu@gmail.com
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div>
+                                                <a href="javascript:;" class="btn btn-success">Pay Online</a>
+                                                <a href="javascript:;" class="btn btn-danger">Pay Offline</a>
+                                            </div>
+
+                                        </div>
+                                        <!-- /box_general -->
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!--END STEP 4-->
+
+                        </div>
+                        <!-- /middle-wizard -->
+                        <div id="bottom-wizard">
+                            <button type="button" name="backward" class="backward">Go Back </button>
+                            <button type="button" name="forward" class="forward">Continue</button>
+                            <button type="submit" name="process" class="submit">Submit</button>
+                        </div>
+                        <!-- /bottom-wizard -->
+                    </form>
+                </div>
+                <!-- /Wizard container -->
+            </div>
+            <!-- /Container -->
+        </main>
+        <!-- /main -->
+
+        <footer>
+            <div class="container clearfix">
+                <p>All rights reserved. Stardom Reality &copy; 2018</p>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- Modal terms -->
+        <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termsLabel">Terms and conditions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>It has been a while. I would like to present you the project I work on a few months ago.</p>
+                        <p>Fountain is the automation platform built for speed and scale (process millions of applicants each year for the world's best companies)</p>
+                        <p>Want to find out more? Visit the website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal terms -->
+
+        <!-- COMMON SCRIPTS -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/common_scripts.min.js"></script>
+        <script src="js/main.js"></script>
+        <!--script src="js/wizard_func_single_branch.js"></script-->	
+        <script src="js/uploader.js"></script>
+
+        <!--SCRIPT TO PROCESS FORM SUBMISSION-->
+        <script>
+
+            /**
+            SCRIPT WHICH CONTROLS FORM SUBMISSION
+            PASS FORMDATA TO YOUR AJAX SCRIPT
+            **/
+            function submitForm(form){
+                var formData = new FormData(form);
+                console.log("Form data", formData);
+                alert('Form Submitted');
+                return false;
+            }
+
+
+            /**SCRIPT WHICH CONTROLS WIZARD AND VALIDATION**/
+            'use strict';
+            /** @type {!Array} */
+            var _0x2f63 = ["use strict", "action", "form_send_single_branch.php", "attr", "form#wrapped", ":radio", "is", ":checkbox", "next", "insertBefore", "insertAfter", "validate", "#wrapped", ".submit", "length", "val", "input#website", "isMovingForward", ":input", "find", "step", "state", "wizard", "valid", "#wizard_container", ":checked", "form"];
+
+            jQuery(function($) {
+
+                "use strict";
+                $("form#wrapped")["attr"]("action", "form_send_single_branch.php");
+                $("#wizard_container")["wizard"]({
+                    stepsWrapper : "#wrapped",
+                    submit : ".submit",
+                    beforeSelect : function(event, data) {
+                        if ($("input#website")["val"]()["length"] != 0) {
+                            return false;
+                        }
+                        if (!data["isMovingForward"]) {
+                            return true;
+                        }
+                        var _0x1c7fx6 = $(this)["wizard"]("state")["step"]["find"](":input");
+                        return !_0x1c7fx6["length"] || !!_0x1c7fx6["valid"]();
+                    }
+                })["validate"]({
+                    errorPlacement : function(label, error) {
+                        if (error["is"](":radio") || error["is"](":checkbox")) {
+                            label["insertBefore"](error["next"]());
+                        } else {
+                            label["insertAfter"](error);
+                        }
+                    },
+                    submitHandler: submitForm
+                });
+
+            });
+
+            $("#wizard_container")["wizard"]({
+                transitions : {
+                    branchtype : function(formatters, customFormatters) {
+                        var _0x1c7fx9 = formatters["find"](":checked")["val"]();
+                        if (!_0x1c7fx9) {
+                            $("form")["valid"]();
+                        }
+                        return _0x1c7fx9;
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>

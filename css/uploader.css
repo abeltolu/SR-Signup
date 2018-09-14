@@ -1,0 +1,86 @@
+.uploader {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+    .uploader input[type="file"] {
+display: none;
+}
+
+    .uploader label {
+float: left;
+clear: both;
+width: 100%;
+padding: 2rem 1.5rem;
+text-align: center;
+background: #fff;
+border-radius: 7px;
+border: 3px dashed #eee;
+-webkit-transition: all .2s ease;
+transition: all .2s ease;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+    .uploader #file-image.hidden, .hidden {
+display: none;
+}
+
+    .uploader #file-image {
+display: inline;
+margin: 0 auto .5rem auto;
+width: auto;
+height: auto;
+max-width: 180px;
+}
+
+    .uploader #start {
+float: left;
+clear: both;
+width: 100%;
+}
+
+    .uploader div {
+margin: 0 0 .5rem 0;
+color: #5f6982;
+}
+
+    .uploader #start i.fa {
+font-size: 50px;
+margin-bottom: 1rem;
+-webkit-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+
+    .uploader #notimage.hidden {
+display: none;
+}
+
+    .uploader .btn {
+display: inline-block;
+margin: .5rem .5rem 1rem .5rem;
+clear: both;
+font-family: inherit;
+font-weight: 700;
+font-size: 12px;
+text-decoration: none;
+text-transform: initial;
+border: none;
+border-radius: 25px;
+outline: none;
+padding: 0 1rem;
+height: 36px;
+line-height: 36px;
+color: #fff;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+box-sizing: border-box;
+background: #46639B;
+border-color: #46639B;
+cursor: pointer;
+}
